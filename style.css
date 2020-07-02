@@ -71,15 +71,13 @@ body{
     text-align: center;
 }
 #action-message,#final-message {
-	text-align: center;
+    text-align: center;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin: 10px 0;
 }
-#final-message{
-    margin: 10px 0 20px 0!important;
-}
+
 .rps{
    display: flex; 
    flex-wrap: wrap;
@@ -182,7 +180,8 @@ body{
     letter-spacing: 2px;
     position: absolute;
     bottom: 0;
-    left: 50%;    
+    right: 0;
+    margin: 10px;
 }
 @media(max-width:830px){
     .container-rps{
