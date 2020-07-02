@@ -16,6 +16,7 @@ function rpsGame(yourChoice){
    message = finalMessage(results);
    rpsFrontEnd(yourChoice.id,botChoice,message);
    document.getElementById('action-message').remove();
+   document.getElementById('footer').remove();
    document.getElementById('final-message').append("Thank you!");
 
 }
