@@ -154,7 +154,27 @@ body{
      font-size:50px;
      padding:20px;
      margin: 20px;
+     font-weight: 800;
      font-family: fantasy;
+     text-transform: uppercase;
+     /* text-shadow:
+     0 1px #111,
+     -1px 0 #000,
+     -1px 2px #111,
+     -2px 1px #000,
+     -2px 3px #111,
+     -3px 2px #000,
+     -3px 4px #111,
+     -4px 3px #000,
+     -4px 5px #111,
+     -5px 4px #000,
+     -5px 6px #111,
+     -6px 5px #000,
+     -6px 7px #111,
+     -7px 6px #000,
+     -7px 8px #111,
+     -8px 7px #000; */
+     
 }
 .footer h4{
     font-weight: 500;

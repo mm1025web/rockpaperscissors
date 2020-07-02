@@ -43,11 +43,11 @@ function decideWinner(yourChoice,computerChoice){
 
 function finalMessage([yourScore, computerScore]){
     if(yourScore === 0){
-        return {'message':'You lost!','color':'red'};
+        return {'message':'You lost!','color':'rgb(199, 8, 8)'};
     }else if(yourScore === 0.5){
         return {'message':'You tied!','color':'yellow'};
     }else{
-        return {'message':'You won!','color':'green'};
+        return {'message':'You won!','color':'rgb(11, 192, 50)'};
     }
 }
 function rpsFrontEnd(humanImage,computerImage,finalMessage)
@@ -67,7 +67,8 @@ function rpsFrontEnd(humanImage,computerImage,finalMessage)
 
     
     humanDiv.innerHTML = "<i class='" + imageDatabase[humanImage] + " fa-5x final_human_image'>" + "</i>"; 
-    messageDiv.innerHTML = "<h1 class='answer' style='color: " + finalMessage['color'] + ";'>" + finalMessage['message'] + "</h1>";
+     
+     messageDiv.innerHTML = "<h1 class='answer' style='color: " + finalMessage['color'] + "; text-shadow: 0px 0px 6px " +finalMessage['color']+" ;  '>" + finalMessage['message'] + "</h1>";
     computerDiv.innerHTML = "<i class='" + imageDatabase[computerImage] + " fa-5x final_bot_image'>"  + "</i>";
 
     // humanDiv.innerHTML = "<img src='" + imageDatabase[humanImage] + "' height=150 >";
