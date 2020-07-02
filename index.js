@@ -18,7 +18,8 @@ function rpsGame(yourChoice){
    document.getElementById('action-message').remove();
    document.getElementById('footer').remove();
    document.getElementById('final-message').append("Thank you!");
-
+   //document.getElementById("refresh").style.display = "flex";
+   document.getElementById("refresh").classList.add("refresh"); 
 }
 
 function randomNumber(){

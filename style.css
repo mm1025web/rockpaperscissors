@@ -25,7 +25,7 @@ body{
 .header h1 {
 
   display: block;
-  margin: 11px 0 17px 0;
+  margin: 1px 0;
   font-size: 60px;
   line-height: 80px;
   color: #6b6b6b;
@@ -67,7 +67,7 @@ body{
 
 .container-rps{
     width: 75%;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
 }
 #action-message,#final-message {
@@ -75,7 +75,7 @@ body{
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin: 10px 0;
+	margin: 50px 0 10px 0;
 }
 
 .rps{
@@ -83,14 +83,29 @@ body{
    flex-wrap: wrap;
    justify-content: center;  
    padding: 10px;
+   margin-top: 40px;
+}
+.refresh{
+    cursor: pointer;
+    font-size: 40px;
+    display: flex!important;
+    justify-content: center;
 }
 
-.fa-redo-alt{
+
+
+/* .fa-redo-alt{
+    display: none;
     transform: scale(0.3);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    
 }
 .fa-redo-alt:hover {
     transform: scale(0.3)!important;
-}
+} */
  i {
     position: relative; 
     top: 0;
