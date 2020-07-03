@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
     crossorigin="anonymous"/>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
     <title>R.P.S.</title>
@@ -43,9 +45,9 @@
 
                 <div class="rps" id="rps-div">
                    
-                    <i class="fas fa-hand-rock fa-5x mx-md-5" id="rock" onclick="rpsGame(this)"></i>
-                    <i class="fas fa-hand-paper fa-5x mx-md-5" id="paper" onclick="rpsGame(this)"></i>
-                    <i class="fas fa-hand-scissors fa-5x mx-md-5" id="scissors" onclick="rpsGame(this)"></i>
+                    <i class="fas fa-hand-rock fa-5x mx-md-5" id="rock" onclick="rpsGame(this)" data-aos-duration="1000" data-aos="zoom-in-right"></i>
+                    <i class="fas fa-hand-paper fa-5x mx-md-5" id="paper" onclick="rpsGame(this)" data-aos-duration="1000" data-aos="zoom-in-up"></i>
+                    <i class="fas fa-hand-scissors fa-5x mx-md-5" id="scissors" onclick="rpsGame(this)" data-aos-duration="1000" data-aos="zoom-in-left"></i>
  
                     <!-- <img src="https://cdn2.thecatapi.com/images/b1q.jpg" alt="" height="150" id="rock" onclick="rpsGame(this)">
                     <img src="https://cdn2.thecatapi.com/images/b2q.jpg" alt="" height="150" id="paper" onclick="rpsGame(this)">
@@ -59,6 +61,10 @@
             </footer>
     <!--  JavaScript -->
     <script src="index.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
  </body>
 </html>

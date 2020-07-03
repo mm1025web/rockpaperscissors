@@ -67,10 +67,10 @@ function rpsFrontEnd(humanImage,computerImage,finalMessage)
     var messageDiv = document.createElement('div');
 
     
-    humanDiv.innerHTML = "<i class='" + imageDatabase[humanImage] + " fa-5x final_human_image'>" + "</i>"; 
+    humanDiv.innerHTML = "<i style='box-shadow: 0px 20px 50px " + finalMessage['color']+" ;  'data-aos-duration='1000' data-aos='zoom-in-right' class='" + imageDatabase[humanImage] + " fa-5x final_human_image'>" + "</i>"; 
      
-     messageDiv.innerHTML = "<h1 class='answer' style='color: " + finalMessage['color'] + "; text-shadow: 0px 0px 6px " +finalMessage['color']+" ;  '>" + finalMessage['message'] + "</h1>";
-    computerDiv.innerHTML = "<i class='" + imageDatabase[computerImage] + " fa-5x final_bot_image'>"  + "</i>";
+     messageDiv.innerHTML = "<h1 class='answer' style='color: " + finalMessage['color'] + "; text-shadow: 0px 0px 6px " + finalMessage['color']+" ;  '>" + finalMessage['message'] + "</h1>";
+    computerDiv.innerHTML = "<i style='box-shadow: 0px 20px 50px " + finalMessage['color']+" ; 'data-aos-duration='1000' data-aos='zoom-in-left' class='" + imageDatabase[computerImage] + " fa-5x final_bot_image'>"  + "</i>";
 
     // humanDiv.innerHTML = "<img src='" + imageDatabase[humanImage] + "' height=150 >";
     // messageDiv.innerHTML = "<h1 style='color: " + finalMessage['color'] + "; font-size:60px; padding:30px;'>" + finalMessage['message'] + "</h1>"
